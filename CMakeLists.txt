@@ -87,7 +87,6 @@ endif()
 
 ament_auto_package(
   # export information to downstream (depended-by) packages
-  CONFIG_EXTRAS "${PROJECT_NAME}-extras.cmake"
   # install additional folders
   INSTALL_TO_SHARE resources urdf launch param icons
 )
