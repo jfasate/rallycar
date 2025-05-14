@@ -13,6 +13,7 @@ cd librealsense && mkdir build && cd build
 cmake .. -DBUILD_EXAMPLES=true -DCMAKE_BUILD_TYPE=release -DFORCE_RSUSB_BACKEND=true -DBUILD_WITH_CUDA=true
 #If above command dont work, please try:
 cmake -DCMAKE_CUDA_COMPILER=/usr/local/cuda-12.6/bin/nvcc ..
+#Run
 make -j$(($(nproc)-1)) && sudo make install
 # get back
 cd ../..
