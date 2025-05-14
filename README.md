@@ -10,8 +10,9 @@ The package includes the low-level hardware interface, as well as utilities that
 git clone -b v2.55.1 https://github.com/IntelRealSense/librealsense.git --depth=1
 # build the librealsense driver in-place, setting FORCE_RSUSB_BACKEND
 cd librealsense && mkdir build && cd build
+#To run below command first you need to enable CUDA, check cuda using jtop
 cmake .. -DBUILD_EXAMPLES=true -DCMAKE_BUILD_TYPE=release -DFORCE_RSUSB_BACKEND=true -DBUILD_WITH_CUDA=true
-#If above command dont work, please try:
+#If you dont have CUDA, try running below command:
 cmake -DCMAKE_CUDA_COMPILER=/usr/local/cuda-12.6/bin/nvcc ..
 #Run
 make -j$(($(nproc)-1)) && sudo make install
