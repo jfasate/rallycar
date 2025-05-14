@@ -1,4 +1,4 @@
-# MFET 642/442 Programming Robots with ROS -- The RallyCar Base Software
+# The RallyCar Base Software
 
 ![A top-down view of the 3rd-gen rallycar with component illustration](resources/figures/rallycar3-top-down.jpg)
 A top-down view of the 3rd-gen rallycar with an illustration of components.
