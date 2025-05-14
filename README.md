@@ -12,7 +12,7 @@ git clone -b v2.55.1 https://github.com/IntelRealSense/librealsense.git --depth=
 cd librealsense && mkdir build && cd build
 #To run below command first you need to enable CUDA, check cuda using jtop
 cmake .. -DBUILD_EXAMPLES=true -DCMAKE_BUILD_TYPE=release -DFORCE_RSUSB_BACKEND=true -DBUILD_WITH_CUDA=true
-#If you dont have CUDA, try running below command:
+#If above dont work please try:
 cmake -DCMAKE_CUDA_COMPILER=/usr/local/cuda-12.6/bin/nvcc ..
 #Run
 make -j$(($(nproc)-1)) && sudo make install
