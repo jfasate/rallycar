@@ -1,8 +1,5 @@
 # The RallyCar Base Software
 
-![A top-down view of the 3rd-gen rallycar with component illustration](resources/figures/rallycar3-top-down.jpg)
-A top-down view of the 3rd-gen rallycar with an illustration of components.
-
 ## Included components
 The package includes the low-level hardware interface, as well as utilities that help developers to build and load maps and race lines. To build the package, a few setup steps should be done to port depending sources into your workspace:
 ```sh
