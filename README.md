@@ -16,13 +16,13 @@ make -j$(($(nproc)-1)) && sudo make install
 cd ../..
 
 # create a ROS2 workspace
-mkdir -p rallycar_ws/src && cd rallycar/src
+mkdir -p rallycar_ws/src && cd rallycar_ws/src
 # clone this repository
 git clone -b ros2 https://github.com/HaoguangYang/rallycar.git --depth=1
 # you need to build the realsense camera ROS2 wrapper from source, as we have compiled the library.
 git clone -b 4.54.1 https://github.com/IntelRealSense/realsense-ros.git --depth=1
 # clone robot_localization if you are using it for EKF filter -- version needs to be greater than 3.6.0 (we are using 3.9.0 for demo here)
-git clone -b 3.9.0 https://github.com/cra-ros-pkg/robot_localization.git --depth=1
+git clone https://github.com/ARES-RA/robot_localization.git --depth=1
 # you can build the workspace now
 cd ..
 source /opt/ros/humble/setup.bash
